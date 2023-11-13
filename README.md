@@ -4,3 +4,7 @@
 Решением послужило использование готовых библиотек ML с ресурса Huggingface
 Ссылка на ресурс: https://huggingface.co/models?pipeline_tag=translation&language=ru&sort=trending 
 Также на данном ресурсе можно выбрать подходящий шаблон pipeline ссылка: https://huggingface.co/docs/transformers/main_classes/pipelines#transformers.pipeline
+
+
+Домашняя работа по ML #2
+Суть заключается в том, чтобы научиться работать в команде и попробовать создать веб-приложение на основе библиотеки стримилит. 
