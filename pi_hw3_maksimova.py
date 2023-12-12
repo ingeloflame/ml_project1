@@ -10,6 +10,7 @@ class Item(BaseModel):
     text: str
 
 app = FastAPI()
+translator = pipeline("translation_ru_to_fr", "Helsinki-NLP/opus-mt-ru-fr")
 
 @app.get("/")
 def root():
@@ -18,9 +19,7 @@ def root():
 @app.get("/translate/")
 def get_info():
     a = "Это было не так уж просто"
-    translator = pipeline("translation_ru_to_fr", "Helsinki-NLP/opus-mt-ru-fr")
-    b = translator(a)
-    return b
+    return translator(a)
 
 
     
