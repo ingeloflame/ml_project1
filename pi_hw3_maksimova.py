@@ -15,7 +15,7 @@ app = FastAPI()
 def root():
     return {"message": "Hello World"}
 
-@app.get("/translate/")
+@app.post("/translate/")
 def get_info():
     a = "Это было не так уж просто"
     translator = pipeline("translation_ru_to_fr", "Helsinki-NLP/opus-mt-ru-fr")
