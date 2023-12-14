@@ -6,3 +6,4 @@ tensorflow
 pytest
 streamlit
 httpx
+sentencepiece
