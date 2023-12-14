@@ -12,4 +12,4 @@ def test_read_main():
 def test_get_info():
     response = client.get("/translate/")
     assert response.status_code == 200
-    assert response.json() == [{"translation_text":"Ça ne fut pas si facile.."}]
+    assert response.json() == [{"translation_text":"Ça ne fut pas si facile."}]
