@@ -15,7 +15,7 @@ def test_file_uploader_exists():
 def test_load_image_reads_file_data():
     at = AppTest.from_file("ml_HW2_Alex_R.py")
     # Simulate file upload
-    with open("test_img.png", "rb") as file:
+    with open("test_img.jpg", "rb") as file:
         at.file_uploader[0].input(file).run()
     # Check the returned data
     assert at.return_value == file.read()
